@@ -1,0 +1,86 @@
+  .animated-gradient {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-gradient-animation 5s ease infinite;
+}
+
+@keyframes text-gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.gradient-background {
+    background: linear-gradient(135deg, #4b6cb7, #182848); /* Gradient colors */
+    padding: 30px; /* Increase padding to make the background larger than the image */
+    border-radius: 10px; /* Optional: Use a smaller border radius for slightly rounded corners */
+    display: flex; /* Center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: auto; /* Ensure the background adjusts according to the content */
+    height: auto; /* Adjust height automatically */
+}
+.rect-gradient-background {
+    background: linear-gradient(135deg, #4b6cb7, #d94a9a); /* Adjust the gradient colors */
+    padding: 50px; /* Adjust padding to control the size of the background */
+    border-radius: 40px; /* Rounded corners */
+    display: flex; /* Center content with flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 400px; /* Set width of the gradient background */
+    height: 400px; /* Set height of the gradient background */
+}
+
+.profile-img {
+    max-width: 170%; /* Set the maximum width of the image */
+    max-height: auto;
+    border-radius: 170%; /* Make the image circular */
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+}
+
+body {
+    padding-top: 70px; /* Adjust padding to prevent content from hiding behind the navbar */
+}
+.skills{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.d-md-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+    display: flex; /* Use flexbox for the row */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+.bd-placeholder-img .rounded-circle {
+    display: flex; /* Use flexbox for the image container */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+    border-radius: 50%; /* Ensure images are circular */
+    max-width: 100%; /* Ensure images do not exceed their container size */
+    max-height: auto; /* Maintain aspect ratio */
+}
+.col-lg-4 img{
+    
+}
